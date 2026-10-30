@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8F2"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="♻️ EcoSort AI"
+            android:textColor="#246B45"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="36dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart Waste Classification"
+            android:textColor="#26382D"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select or capture a waste image and let on-device AI identify its category."
+            android:textColor="#607064"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <ImageView
+            android:id="@+id/previewImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="28dp"
+            android:background="#E2EBDD"
+            android:contentDescription="Selected waste image preview"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Select Waste Image (Gallery)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/captureImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Capture Photo (Camera)"
+            android:backgroundTint="#246B45"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:background="#E2EBDD"
+            android:text="Your AI prediction will appear here."
+            android:textColor="#26382D"
+            android:textSize="17sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Categories depend on the trained model."
+            android:textColor="#607064"
+            android:textSize="13sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+</ScrollView>
